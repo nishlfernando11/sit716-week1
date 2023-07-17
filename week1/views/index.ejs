@@ -9,9 +9,9 @@
     <p>Welcome to <%= title %> <%= subHeading %></p>
     <br/>
     <ul>
-      <%= list.forEach(item => {
-     <li><%= item %></li>
-     }) %> 
+      <% list.forEach(item => { %>
+     <li>ID: <%= item.id %> - Title: <%= item.title %></li>
+     <% }) %> 
     </ul>
   </body>
 </html>
