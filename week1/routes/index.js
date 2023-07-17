@@ -15,4 +15,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express', subHeading: 'Class 01' , list: list});
 });
 
+router.get('/glossary', function(req, res, next) {
+  res.render('glossary', { title: 'Express', subHeading: 'Class 01' , list: list});
+});
+
+
 module.exports = router;
